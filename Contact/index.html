@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="icon.png">
+    
+        <meta charset="UTF-8">
+        <meta name="robots" content="index, follow">
+    
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="5000000">
+        <!-- <meta http-equiv="refresh" content="5"> -->
+    
+        <meta name="keywords" content="class one, html learn">
+        <meta name="description" content="you learn every things about html">
+        <meta name="author" content="mr abdul kuddus">
+        <meta name="copyrigth" content="www.mysite.com">
+        <meta name="revisit" content="5 days">
+    
+        <meta property="og:title" content="html learn" />
+        <meta property="og:site_name" content="adfas" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="http://" />
+        <meta property="og:image" content="http://" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="315" />
+    
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="http://">
+        <meta name="twitter:card" content="summary_large_image">
+        <link rel="stylesheet" href="../fonts/fontawesome/fontawesome-free-5.15.3-web/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!-- git commands -->
+
+    <!-- 
+        git init 
+        git config --global user.name 'hasnat-shohag'
+        git config --global user.email 'hasnat.ru.ice19@gmail.com'
+        git add .
+        git commit -m 'project init'
+        git branch --all
+        git push -u origin master
+        git push -f origin master
+
+        git checkout gh-pages
+        git push -u origin gh-pages
+
+        git remote add origin https://github.com/hasnat-shohag/student_registration_form.git
+
+        https://github.com/hasnat-shohag/student_registration_form
+    
+    -->
+<section>
+<div class="row">
+    <div class="contact_form">
+        
+        <form action="#" name="s_reg" id="myForm">
+            <h1>
+                Give Your Information
+            </h1>
+                <div class="input_group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name"><i class="fas fa-user"></i> Name...</label>
+                </div>
+                <div class="input_group">
+                    <input type="number" id="number" name="class" required>
+                    <label for="number"><i class="fas fa-school"></i> Class...</label>
+                </div>
+                
+                <div class="input_group">
+                    <input type="number" id="roll" name="roll" required>
+                    <label for="roll"><i class="fas fa-pen-fancy"></i> Roll</label>
+                </div>
+                <div class="input_group">
+                    <input type="number" id="phn" name="phn" required>
+                    <label for="phn"><i class="fas fa-phone-square-alt"></i> Phone No..</label>
+                </div>
+                <div class="button">
+                    <button type="button" onclick="registration(+s_reg.name.value, +s_reg.class.value, +s_reg.roll.value, +s_reg.phn.value)">SUBMIT<i class="fas fa-paper-plane"></i> </button>
+                    <input type="button" onclick="myFunction()" value="Reset form">
+        
+                </div>
+               
+        </form>
+        <div class="result">
+            <h1>
+                Your Given Result
+            </h1>
+            <ul id="s_info"></ul>
+        </div>
+    </div>
+    
+</div>
+</section>
+
+<script src="index.js"></script>
+</body>
+</html>
